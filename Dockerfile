@@ -10,7 +10,7 @@ RUN curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 RUN apt-get update
 RUN apt-get -y install nodejs
 RUN apt-get -y install yarn
-
+RUN npm install -g node-dev
 COPY . .
 
 CMD [ "/start.sh" ]
